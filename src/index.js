@@ -12,7 +12,7 @@ renderCharts()
 // Get Users Data
 
 console.log("getting a collection of weight logs for the current user")
-const testData = query(collection(db, "weight-logs"));
+const testData = query(collectionGroup(db, "weight-logs"));
 console.log(testData)
 const snaphot = await getDocs(testData);
 snaphot.forEach((item) => {

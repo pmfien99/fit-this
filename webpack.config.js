@@ -51,9 +51,14 @@ module.exports =  {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack App',
-      filename: 'index.html',
-      template: 'src/template.html'
+      title: 'Fit This Login',
+      filename: 'login.html',
+      template: 'src/templates/login.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Fit This Dashboard',
+      filename: 'dashboard.html',
+      template: 'src/templates/dashboard.html'
 
     })
   ]

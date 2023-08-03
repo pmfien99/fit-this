@@ -1,22 +1,5 @@
 import Chart from 'chart.js/auto';
-
-const exampleData = [
-  {
-    date: '2023-07-10',
-    weight: 166.5,
-    //notes: "this is an example note for that day"
-  },
-  {
-    date: '2023-07-15',
-    weight: 167.5,
-    //notes: "this is an example note for that day."
-  },
-  {
-    date: '2023-07-23',
-    weight: 168,
-    //notes: "this is an example note for that day!"
-  }
-]
+import { collectionGroup, query, where, getDocs } from "firebase/firestore";  
 
 const exampleWeights = [166.5, 166.9, 167, 168, 169]
 const exampleBMI = [5.1, 5.5, 5.6, 5.2, 5.1]
